@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim 
+metadata:
+  name: nodejs-pvc
+  namespace: task
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources: 
+    requests: 
+      storage: 10Gi
